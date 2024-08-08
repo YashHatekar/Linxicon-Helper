@@ -27,7 +27,7 @@ modelfile = '''
 ollama.create(model='linxicon-v2', modelfile=modelfile)
 ```
   <br>
-**This code uses Llama3 as the base model**
+This code uses Llama3 as the base model
 
 ## Usage:
   1. For the first run uncomment the modelfile and LLM configuration line of code from lines 38 to 42. This can be commented after the first run or it will try to recreate the same llm.
