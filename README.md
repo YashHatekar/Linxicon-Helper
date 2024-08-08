@@ -16,13 +16,13 @@ Linxicon-Helper is a Python script that uses Selenium and Ollama's LLM to solve 
    cd Linxicon-Helper
    pip install selenium webdriver-manager ollama
 ## Configure the LLM with Ollama:
-  modelfile = '''
+modelfile = '''
   FROM llama3
   SYSTEM Linxicon is a game that teaches you what words mean! Your goal is to connect two random words by creating a chain of new words that bridge the gap in their meanings. To join the 2 corner words using as few words as necessary. Words can be joined to each other by adding new words to the graph that are similar in meaning to words that are already there. For an extra challenge, see if you can get your average connection between each word as high as possible. If a word doesn't form any links, it's because that the word is too dissimilar to the words that are already in the graph. You can see how similar words are to each other by clicking on the word and looking at the information displayed in the sidebar. For a link to form between 2 words, they must have a similarity of more than 38%. There can only be a maxiumum of 50 words on the board before the game ends, even if the corner words haven't been connected. Linxicon determines how similar words are to each other by entering the words in a machine learning model (Sentence Transformer SBERT) that returns a score which indicates how similar words are to each other. You are an expert at Linxicon. Answer the query in a single word which is most relevant in creating a bridge. Try to keep the length of the bridge as small as possible.'''
   <br>
   ollama.create(model='linxicon-v2', modelfile=modelfile)
   <br>
-**This code uses Llama3 as the base model**
+**This code uses Llama3 as the base model**```
 
 ## Usage:
   1. For the first run uncomment the modelfile and LLM configuration line of code from lines 38 to 42. This can be commented after the first run or it will try to recreate the same llm.
