@@ -35,3 +35,6 @@ This code uses Llama3 as the base model
   3. run the code using python /path/linx_help.py
   4. Do not interfere with the newly opened browser window since its code-controlled and manual intervention might lead to unexpected crashes.
   5. On a successful solution the shortest path and the number of words used stats will be printed in the terminal.
+
+## Code in Working:
+<iframe width="560" height="315" src="https://youtube.com/shorts/Ov64Bi346qo?feature=share" frameborder="0" allowfullscreen></iframe>
